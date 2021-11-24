@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+:root {
+  --primary-color: lightseagreen;
+  --secondary-color: lightcoral;
+}
+
+.header-sec {
+  background: var(--primary-color);
+  text-align: center;
+
+  .container {
+    margin: auto;
+  }
+
+  .container1 {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid white;
+  }
+  .container2 {
+    background: white;
+    display: flex;
+
+    font-size: 1.2em;
+
+    ul {
+      margin: auto;
+      display: flex;
+
+      li {
+        cursor: pointer;
+        margin: 0.5em;
+        border-radius: 2em;
+        padding: 0.2em;
+        font-weight: 600;
+      }
+
+      .hard{
+        cursor: default;
+        color: lightgray;
+        
+      }
+    }
+    .restart {
+      margin: auto;
+      color: var(--primary-color);
+      font-size: 1.2em;
+      border-radius: 2em;
+      padding: 0.5em;
+      cursor: pointer;
+    }
+  }
+}
+
+.active {
+  color: black;
+  background-color: var(--primary-color);
+}
+
+.boxcolors-sec {
+  background: lightslategrey;
+  width: 100%;
+  height: 100%;
+
+  .box-title {
+    opacity: 0;
+    font-size: 1.5em;
+    transition: all 2s ease-in-out;
+  }
+
+  .score {
+    opacity: 0;
+    font-size: 1.3em;
+    transition: opacity 2s ease-in-out;
+  }
+
+  .message {
+    opacity: 0;
+  }
+
+  .messageloser {
+    animation-name: takel;
+    animation-duration: 3s;
+  }
+
+  @keyframes takel {
+    0% {
+      opacity: 0;
+      font-size: 2em;
+    }
+
+    50% {
+      opacity: 1;
+      font-size: 8em;
+    }
+
+    100% {
+      opacity: 0;
+      font-size: 2em;
+      display: none;
+    }
+  }
+
+  .container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .box {
+      width: 100px;
+      height: 100px;
+      font-size: 2em;
+      border: 2px solid red;
+      margin: 2em;
+      padding: 1.3em;
+      color: lightslategrey;
+    }
+  }
+}

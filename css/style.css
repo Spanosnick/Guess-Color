@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* li {
+  list-style: none;
+}
+
+:root {
+  --primary-color: lightseagreen;
+  --secondary-color: lightcoral;
+}
+
+.header-sec {
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.header-sec .container {
+  margin: auto;
+}
+
+.header-sec .container1 {
+  color: white;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid white;
+}
+
+.header-sec .container2 {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2em;
+}
+
+.header-sec .container2 ul {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-sec .container2 ul li {
+  cursor: pointer;
+  margin: 0.5em;
+  border-radius: 2em;
+  padding: 0.2em;
+  font-weight: 600;
+}
+
+.header-sec .container2 ul .hard {
+  cursor: default;
+  color: lightgray;
+}
+
+.header-sec .container2 .restart {
+  margin: auto;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  border-radius: 2em;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.active {
+  color: black;
+  background-color: var(--primary-color);
+}
+
+.boxcolors-sec {
+  background: lightslategrey;
+  width: 100%;
+  height: 100%;
+}
+
+.boxcolors-sec .box-title {
+  opacity: 0;
+  font-size: 1.5em;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.boxcolors-sec .score {
+  opacity: 0;
+  font-size: 1.3em;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+
+.boxcolors-sec .message {
+  opacity: 0;
+}
+
+.boxcolors-sec .messageloser {
+  -webkit-animation-name: takel;
+          animation-name: takel;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes takel {
+  0% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  50% {
+    opacity: 1;
+    font-size: 8em;
+  }
+  100% {
+    opacity: 0;
+    font-size: 2em;
+    display: none;
+  }
+}
+
+@keyframes takel {
+  0% {
+    opacity: 0;
+    font-size: 2em;
+  }
+  50% {
+    opacity: 1;
+    font-size: 8em;
+  }
+  100% {
+    opacity: 0;
+    font-size: 2em;
+    display: none;
+  }
+}
+
+.boxcolors-sec .container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boxcolors-sec .container .box {
+  width: 100px;
+  height: 100px;
+  font-size: 2em;
+  border: 2px solid red;
+  margin: 2em;
+  padding: 1.3em;
+  color: lightslategrey;
+}
+/*# sourceMappingURL=style.css.map */
