@@ -7,6 +7,7 @@ var container=document.getElementsByClassName("container")[1];
 var textscore=document.querySelector(".score");
 var message=document.getElementsByClassName("message")[0];
 
+//this is dev
 
 // Event listeners to the buttons
 restartbtn.addEventListener('click',init);
